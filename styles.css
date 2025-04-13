@@ -17,10 +17,11 @@ body {
 /* Header Styling */
 header {
     background: #1f2937;
-    color: #fff;
+    color: #f9fafb;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
@@ -30,22 +31,22 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    opacity: 0.8;
+    font-weight: 300;
 }
 
 /* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #f9fafb;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
@@ -54,47 +55,32 @@ nav a:hover {
     background: #4b5563;
 }
 
-/* Main Content */
+/* Main Section */
 main {
-    max-width: 1200px;
     margin: 20px auto;
-    background: #fff;
+    max-width: 1200px;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
+main h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #1f2937;
 }
 
-section p {
+main p {
     font-size: 1rem;
-    line-height: 1.8;
+    margin-bottom: 10px;
     color: #4b5563;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background: #1f2937;
-    color: #fff;
-    font-size: 0.9rem;
-}
-
-/* Buttons */
+/* Button Styling */
 button {
     background: #2563eb;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -107,26 +93,25 @@ button:hover {
     background: #1d4ed8;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #1f2937;
+    color: #f9fafb;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
 
-    header h1 {
-        font-size: 2rem;
+/* Keyframes for Header Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
