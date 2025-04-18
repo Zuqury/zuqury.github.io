@@ -3,103 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio showcasing my web development projects and skills.">
-    <title>My Web Development Portfolio</title>
+    <title>Style Guide - Zuqury</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="logo">My Portfolio</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>Style Guide for Zuq</h1>
+        <nav>
+            <ul>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#colors">Colours</a></li>
+                <li><a href="#styles">Text Styles</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <h2>Hi, I'm [Your Name]</h2>
-                <p>A passionate web developer creating modern and responsive websites.</p>
-                <a href="#projects" class="btn">View My Work</a>
+        <section id="fonts" class="panel-container">
+            <h2><a href="#fonts">Fonts</a></h2>
+            <div class="panel">
+                <h4 class="overlock-regular">Overlock</h4>
+                <p class="overlock-regular-italic">The quick brown fox jumps over the lazy dog.</p>
+                <p class="overlock-regular">The quick brown fox jumps over the lazy dog.</p>
+                <p class="overlock-bold">The quick brown fox jumps over the lazy dog.</p>
+                <br>
+                <h4 class="Inconsolata-regular">Inconsolata</h4>
+                <p class="Inconsolata-regular-italic">The quick brown fox jumps over the lazy dog.</p>
+                <p class="Inconsolata-regular">The quick brown fox jumps over the lazy dog.</p>
+                <p class="Inconsolata-bold">The quick brown fox jumps over the lazy dog.</p>
+                <br>
+                <h4 class="Playwrite">Playwrite Deutschland Grundschrift</h4>
+                <p class="Playwrite"><em>The quick brown fox jumps over the lazy dog.</em></p>
+                <p class="Playwrite">The quick brown fox jumps over the lazy dog.</p>
+                <p class="Playwrite"><strong>The quick brown fox jumps over the lazy dog.</strong></p>
             </div>
         </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I'm a web developer with experience in HTML, CSS, JavaScript, and modern frameworks. I enjoy solving problems and building user-friendly web applications.</p>
-                <img src="profile.jpg" alt="Your Profile Picture" class="profile-pic">
+        <section id="colors" class="panel-container">
+            <h2><a href="#colors">Colours</a></h2>
+            <div class="panel">
+                <div class="color-swatch" style="background-color: #363062;">Rhino<br>#363062</div>
+                <h5>Background Colour</h5>
+                <div class="color-swatch" style="background-color: #4D4C7D;">East Bay<br>#4D4C7D</div>
+                <h5>Foreground Colour</h5>
+                <div class="color-swatch" style="background-color: #F5F5F5;">Wild Sand<br>#F5F5F5</div>
+                <h5>Text Colour</h5>
+                <div class="color-swatch" style="background-color: #F99417;">Tree Poppy<br>#F99417</div>
+                <h5>Hyperlink Text</h5>
             </div>
         </section>
-
-        <section id="projects" class="projects-section"></section>
-            <div class="container"></div>
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project">
-                        <img src="project1.jpg" alt="Project 1 Screenshot">
-                        <h3>Project 1</h3>
-                        <p>A brief description of the project.</p>
-                        <a href="#" target="_blank" class="btn">View Project</a>
-                    </div>
-                    <div class="project">
-                        <img src="project2.jpg" alt="Project 2 Screenshot">
-                        <h3>Project 2</h3>
-                        <p>A brief description of the project.</p>
-                        <a href="#" target="_blank" class="btn">View Project</a>
-                    </div>
-                    <div class="project">
-                        <img src="project3.jpg" alt="Project 3 Screenshot">
-                        <h3>Project 3</h3>
-                        <p>A brief description of the project.</p>
-                        <a href="#" target="_blank" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML5 & CSS3</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Responsive Design</li>
-                    <li>Git & GitHub</li>
+        <section id="styles" class="panel-container">
+            <h2><a href="#styles">Text Styles</a></h2>    
+            <div class="panel">
+                <h3>Heading 1</h3>
+                <h1 class="font-example">The quick brown fox jumps over the lazy dog.</h1>
+                <h3>Heading 2</h3>
+                <h2 class="font-example">The quick brown fox jumps over the lazy dog.</h2>
+                <h3>Heading 3</h3>
+                <h3 class="font-example">The quick brown fox jumps over the lazy dog.</h3>
+                <h3>Heading 4</h3>
+                <h4 class="font-example">The quick brown fox jumps over the lazy dog.</h4>
+                <h3>Heading 5</h3>
+                <h5 class="font-example">The quick brown fox jumps over the lazy dog.</h5>
+                <h3>Heading 6</h3>
+                <h6 class="font-example">The quick brown fox jumps over the lazy dog.</h6>
+                <h3>Blockquote</h3>
+                <blockquote class="font-example">The quick brown fox jumps over the lazy dog.</blockquote>
+                <h3>Inline Code</h3>
+                <code class="font-example">The quick brown fox jumps over the lazy dog.</code>
+                <h3>List</h3>
+                <ul class="font-example">
+                    <li>The quick brown fox jumps over the lazy dog.</li>
+                    <li>The quick brown fox jumps over the lazy dog.</li>
+                    <li>The quick brown fox jumps over the lazy dog.</li>
                 </ul>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
-                <a href="mailto:your.email@example.com" class="btn">Email Me</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn">LinkedIn</a>
+                <h3>Body Text</h3>
+                <p class="overlock-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ligula ut augue pellentesque bibendum id a augue. <br><br> Dipsum diam, lacinia id mollis scelerisque, sollicitudin vel mauris. Mauris tempor imperdiet risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse pulvinar mattis nibh, ut finibus odio faucibus sit amet. <br><br> Duis blandit nibh non lobortis gravida. Aliquam convallis risus quis enim auctor, vel sagittis justo mattis. Nullam sed dignissim diam. Maecenas eu vehicula arcu. Fusce sodales suscipit justo consequat interdum. Pellentesque in imperdiet nisl. Suspendisse vestibulum ante felis, vel fermentum arcu scelerisque quis. Morbi vitae dui quis leo posuere elementum.
+                </p>
             </div>
         </section>
     </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2023 [Your Name]. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-                <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
+    <footer>
+        <p>&copy; 2025 Zuqury</p>
     </footer>
 </body>
 </html>
